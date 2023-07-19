@@ -18,7 +18,14 @@ public class PhoneBookTest {
         phoneBook.add("Alex", "321");
         String result = phoneBook.findByNumber("123");
         assertEquals("Sasha", result);
+    }
 
-
+    @Test
+    public void testFindByName(){
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Sasha", "123");
+        phoneBook.add("Alex", "321");
+        String result = phoneBook.findByName("Alex");
+        assertEquals(result, "321");
     }
 }

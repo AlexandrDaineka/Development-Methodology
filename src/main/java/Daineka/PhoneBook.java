@@ -23,6 +23,10 @@ public class PhoneBook {
         return null; // Если совпадения не найдено, возвращает `null`.
     }
 
+    public String findByName(String name){
+        return null;
+    }
+
 
 
 }

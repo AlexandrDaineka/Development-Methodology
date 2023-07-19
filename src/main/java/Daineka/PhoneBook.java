@@ -35,4 +35,9 @@ public class PhoneBook {
         }
         return null; // Если совпадения не найдено, возвращает `null`.
     }
+
+    public List<String> printAllNames(){
+        return null;
+    }
+
 }

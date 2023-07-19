@@ -14,7 +14,13 @@ public class PhoneBook {
         return contacts.size();
     }
     public String findByNumber(String number){
-        return null;
+        for (String contact : contacts){
+            if(contact.endsWith(": " + number)){
+                int index = contact.indexOf(":");
+                return contact.substring(0, index);
+            }
+        }
+        return null; // Если совпадения не найдено, возвращает `null`.
     }
 
 

@@ -1,6 +1,7 @@
 package Daineka;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PhoneBook {
@@ -37,7 +38,9 @@ public class PhoneBook {
     }
 
     public List<String> printAllNames(){
-        return null;
+        List<String> sortedNames = new ArrayList<>(contacts);
+        Collections.sort(sortedNames);
+        return sortedNames;
     }
 
 }
